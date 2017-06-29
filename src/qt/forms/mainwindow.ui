@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>593</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>593</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>900</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>900</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/trycoin_res/title);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>900</width>
+      <height>89</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>900</width>
+      <height>89</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>900</width>
+      <height>89</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/trycoin_res/navibar);</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <property name="leftMargin">
+      <number>20</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="overview">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/trycoin_res/overview);color:#a8abb2;
+}
+QPushButton#overview:checked{
+	border-image: url(:/trycoin_res/overview_press);color:#8b8f99;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="send">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/trycoin_res/send);color:#a8abb2;
+}
+QPushButton#send:checked{
+	border-image: url(:/trycoin_res/send_press);color:#8b8f99;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="receives">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton#receives{
+	border-image: url(:/trycoin_res/receives);color:#a8abb2;
+}
+QPushButton#receives:checked{
+	border-image: url(:/trycoin_res/receives_press);color:#8b8f99;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="transactions">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+	border-image: url(:/trycoin_res/transactions);color:#a8abb2;
+}
+QPushButton#transactions:checked{
+	border-image: url(:/trycoin_res/transactions_press);color:#8b8f99;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="address">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+	border-image: url(:/trycoin_res/address);color:#a8abb2;
+}
+QPushButton#address:checked{
+	border-image: url(:/trycoin_res/address_pres);color:#8b8f99;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>435</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>7</y>
+      <width>18</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/trycoin_res/trycoin_res_logo);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>7</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;TryCoin-Wallet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_btn">
+    <property name="geometry">
+     <rect>
+      <x>868</x>
+      <y>9</y>
+      <width>18</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#close_btn:hover{
+	border-image: url(:/trycoin_res/close_hover);
+}
+QPushButton#close_btn:pressed{
+	border-image: url(:/trycoin_res/close_press);
+}
+QPushButton#close_btn{
+	border-image: url(:/trycoin_res/close);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="min_btn">
+    <property name="geometry">
+     <rect>
+      <x>838</x>
+      <y>9</y>
+      <width>18</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#min_btn:hover{
+	border-image: url(:/trycoin_res/min_hover);
+}
+QPushButton#min_btn:pressed{
+	border-image: url(:/trycoin_res/min_press);
+}
+QPushButton#min_btn{
+	border-image: url(:/trycoin_res/min);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="setting">
+    <property name="geometry">
+     <rect>
+      <x>699</x>
+      <y>0</y>
+      <width>55</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>87</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#setting:pressed{
+selection-background-color: rgb(103, 111, 129);
+	color: rgb(19, 92, 207);
+	background-color: rgb(103, 111, 129);
+	border-color: rgb(103, 111, 129);
+}
+QPushButton#setting:flat{
+	color: rgb(255, 255, 255);
+	background-color: rgb(103, 111, 129);
+	border-color: rgb(103, 111, 129);
+}</string>
+    </property>
+    <property name="text">
+     <string>设置</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="help">
+    <property name="geometry">
+     <rect>
+      <x>764</x>
+      <y>0</y>
+      <width>55</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>87</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#help:pressed{
+	selection-background-color: rgb(103, 111, 129);
+	color: rgb(19, 92, 207);
+	background-color: rgb(103, 111, 129);
+	border-color: rgb(103, 111, 129);
+}
+QPushButton#help:flat{
+	color: rgb(255, 255, 255);
+	background-color: rgb(103, 111, 129);
+	border-color: rgb(103, 111, 129);
+}</string>
+    </property>
+    <property name="text">
+     <string>帮助</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="file">
+    <property name="geometry">
+     <rect>
+      <x>634</x>
+      <y>0</y>
+      <width>55</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>87</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#file:pressed{
+	selection-background-color: rgb(103, 111, 129);
+	color: rgb(19, 92, 207);
+	background-color: rgb(103, 111, 129);
+	border-color: rgb(103, 111, 129);
+}
+QPushButton#file:flat{
+color: rgb(255, 255, 255);
+	background-color: rgb(103, 111, 129);
+	border-color: rgb(103, 111, 129);
+}</string>
+    </property>
+    <property name="text">
+     <string></string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="content" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>901</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>876</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>911</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>min_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>845</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>907</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

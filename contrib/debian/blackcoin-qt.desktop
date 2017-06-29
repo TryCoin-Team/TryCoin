@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TryCoin
+Comment=TryCoin P2P Cryptocurrency
+Comment[fr]=TryCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=TryCoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/trycoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/trycoin;
+Categories=Office;

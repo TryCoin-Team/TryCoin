@@ -1,0 +1,2 @@
+debian/bin/trycoind usr/bin
+src/trycoind usr/lib/trycoin

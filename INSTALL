@@ -1,0 +1,9 @@
+Building TryCoin
+
+See doc/readme-qt.rst for instructions on building TryCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of TryCoin.
+
+See doc/build-*.txt for instructions on building trycoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of TryCoin.
